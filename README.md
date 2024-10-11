@@ -1,97 +1,104 @@
-# Frontend Mentor - Results summary component
+# Frontend Mentor - Solución de componente de código QR
 
-![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
+Esta es una solución al [desafío de componente de código QR en Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la creación de proyectos realistas.
 
-## Welcome! 👋
+## Tabla de contenidos
 
-Thanks for checking out this front-end coding challenge.
+- [Descripción general](#descripción-general)
+	- [Captura de pantalla](#captura-de-pantalla)
+	- [Enlaces](#enlaces)
+- [Mi proceso](#mi-proceso)
+	- [Creado con](#creado-con)
+	- [Lo que aprendí](#lo-que-aprendí)
+	- [Desarrollo continuo](#desarrollo-continuo)
+	- [Recursos útiles](#recursos-útiles)
+- [Autor](#autor)
+- [Agradecimientos](#agradecimientos)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Nota: elimine esta nota y actualice la tabla de contenidos en función de las secciones que conserve.**
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Descripción general
 
-## The challenge
+### Captura de pantalla
 
-Your challenge is to build out this results summary component and get it looking as close to the design as possible.
+![](./screenshot.jpg)
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Agregue una captura de pantalla de su solución. La forma más fácil de hacerlo es usar Firefox para ver su proyecto, hacer clic derecho en la página y seleccionar "Tomar una captura de pantalla". Puedes elegir una captura de pantalla de altura completa o una recortada según la longitud de la página. Si es muy larga, puede ser mejor recortarla.
 
-We provide the data for the results in a local `data.json` file. So you can use that to add the results and total score dynamically if you choose.
+Alternativamente, puedes usar una herramienta como [FireShot](https://getfireshot.com/) para tomar la captura de pantalla. FireShot tiene una opción gratuita, por lo que no necesitas comprarla.
 
-Your users should be able to:
+Luego, recorta/optimiza/edita tu imagen como quieras, agrégala a tu proyecto y actualiza la ruta del archivo en la imagen de arriba.
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+**Nota: Elimina esta nota y los párrafos anteriores cuando agregues tu captura de pantalla. Si prefiere no agregar una captura de pantalla, no dude en eliminar esta sección completa.**
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Enlaces
 
-## Where to find everything
+- URL de la solución: [Agregar la URL de la solución aquí](https://your-solution-url.com)
+- URL del sitio en vivo: [Agregar la URL del sitio en vivo aquí](https://your-live-site-url.com)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+## Mi proceso
+Lo primero es crear un package.json, para ello mediante npm init lo creamos, instalamos sass como depencia de desarrollo con npm i --save-dev sass
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Creado con
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Marcado HTML5 semántico
+- Propiedades personalizadas de CSS
+- Flexbox
+- Cuadrícula CSS
+- Flujo de trabajo para dispositivos móviles
+- [React](https://reactjs.org/) - Biblioteca JS
+- [Next.js](https://nextjs.org/) - Marco de trabajo de React
+- [Componentes con estilo](https://styled-components.com/) - Para estilos
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+**Nota: Estos son solo ejemplos. Elimine esta nota y reemplace la lista anterior con sus propias opciones**
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+### Lo que aprendí
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Use esta sección para resumir algunos de los aprendizajes más importantes mientras trabajaba en este proyecto. Escribirlos y proporcionar ejemplos de código de las áreas que desea destacar es una excelente manera de reforzar su propio conocimiento.
 
-## Building your project
+Para ver cómo puede agregar fragmentos de código, consulte a continuación:
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+```html
+<h1>Algunos códigos HTML del que estoy orgulloso</h1>
+```
+```css
+.proud-of-this-css {
+color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+console.log('🎉')
+}
+```
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Si desea más ayuda con la escritura en Markdown, le recomendamos que consulte [La guía de Markdown](https://www.markdownguide.org/) para obtener más información.
 
-## Deploying your project
+**Nota: elimine esta nota y el contenido de esta sección y reemplácelos con sus propios aprendizajes.**
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+### Desarrollo continuo
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Use esta sección para delinear las áreas en las que desea seguir enfocándose en proyectos futuros. Estos pueden ser conceptos con los que aún no te sientes del todo cómodo o técnicas que te resultaron útiles y que deseas refinar y perfeccionar.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+**Nota: Elimina esta nota y el contenido de esta sección y reemplázalos con tus propios planes para un desarrollo continuo.**
 
-## Create a custom `README.md`
+### Recursos útiles
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- [Recurso de ejemplo 1](https://www.example.com): esto me ayudó por XYZ. Me gustó mucho este patrón y lo usaré en el futuro.
+- [Recurso de ejemplo 2](https://www.example.com): este es un artículo increíble que me ayudó a comprender finalmente XYZ. Se lo recomendaría a cualquiera que todavía esté aprendiendo este concepto.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+**Nota: elimina esta nota y reemplaza la lista anterior con recursos que te ayudaron durante el desafío. Estos pueden resultar útiles para cualquier persona que vea tu solución o para ti mismo cuando mires este proyecto en el futuro.**
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+## Autor
 
-## Submitting your solution
+- Sitio web: [Agrega tu nombre aquí](https://www.your-site.com)
+- Mentor de frontend: [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter: [@yourusername](https://www.twitter.com/yourusername)
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+**Nota: elimina esta nota y agrega, elimina o edita las líneas anteriores según los enlaces que quieras compartir.**
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Agradecimientos
 
-## Sharing your solution
+Aquí puedes agradecer a cualquiera que te haya ayudado en este proyecto. Quizás trabajaste en equipo o te inspiraste en la solución de otra persona. Este es el lugar perfecto para darles algo de crédito.
 
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+**Nota: elimina esta nota y edita el contenido de esta sección según sea necesario. Si completaste este desafío por tu cuenta, no dudes en eliminar esta sección por completo.**
