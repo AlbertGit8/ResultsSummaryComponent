@@ -3,12 +3,15 @@
 
 .contenido {
     height: auto;
-    width: auto;
-    box-shadow: 1rem 0rem 1.5rem -0.5rem v.$azulPalido;
+    width: 100%;
+    
 
     @include m.desktop {
         display: flex;
         border-radius: 1.5rem;
+        height: auto;
+        width: auto;
+        box-shadow: 1rem 0rem 1.5rem -0.5rem v.$azulPalido;
     }
 
     margin-bottom: 2rem;
@@ -142,6 +145,7 @@
                 margin: 0 0 0 2rem;
                 width: 15rem;
             }
+
             margin: 0 2rem 0 2rem;
             text-align: center;
             width: auto;
