@@ -1,0 +1,28 @@
+//Tipografía
+$fuente_principal : "Hanken Grotesk", sans-serif;
+
+//** COLORES **
+
+//Primarios
+$rojoClaro: hsl(0, 100%, 67%);
+$amarilloAnaranjado: hsl(39, 100%, 56%);
+$verdeAzulado: hsl(166, 100%, 37%);
+$azulCobalto:  hsl(234, 85%, 45%);
+
+//Gradients
+$azulPizarra:  hsl(252, 100%, 67%); //fondo
+$azulReal: hsl(241, 81%, 54%); //fondo
+
+$azulVioleta: hsla(256, 72%, 46%, 1); //circulo
+$azulPersa: hsla(241, 72%, 46%, 0);//circulo
+
+//Neutro
+$negro: hsl(0, 0%, 0%);
+$blanco: hsl(0, 0%, 100%);
+$azulPalido: hsl(221, 100%, 96%);
+$lavandaClaro: hsl(241, 100%, 89%);
+$azulGrisaceo: hsl(224, 30%, 27%);
+
+//Tamaños Media Qieries
+$mobile: 375px;
+$desktop: 1440px

@@ -1,7 +1,6 @@
 # Frontend Mentor - Solución de componente de código QR
 
-Esta es una solución al [desafío de componente de código QR en Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la creación de proyectos realistas.
-
+Esta es una solución al desafío del componente Resumen de resultados en Frontend Mentor (https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la creación de proyectos realistas.
 ## Tabla de contenidos
 
 - [Descripción general](#descripción-general)
@@ -10,95 +9,96 @@ Esta es una solución al [desafío de componente de código QR en Frontend Mento
 - [Mi proceso](#mi-proceso)
 	- [Creado con](#creado-con)
 	- [Lo que aprendí](#lo-que-aprendí)
-	- [Desarrollo continuo](#desarrollo-continuo)
-	- [Recursos útiles](#recursos-útiles)
+
 - [Autor](#autor)
-- [Agradecimientos](#agradecimientos)
+
 
 **Nota: elimine esta nota y actualice la tabla de contenidos en función de las secciones que conserve.**
 
 ## Descripción general
+Creación de una tarjeta-resumen para los resultados de un test
 
 ### Captura de pantalla
 
-![](./screenshot.jpg)
+![](./capturaDesktop.png) 
+-
+<img src="capturaMobile1.png" alt="Descripción" width="200" />
+<img src="capturaMobile2.png" alt="Descripción" width="200" />
 
-Agregue una captura de pantalla de su solución. La forma más fácil de hacerlo es usar Firefox para ver su proyecto, hacer clic derecho en la página y seleccionar "Tomar una captura de pantalla". Puedes elegir una captura de pantalla de altura completa o una recortada según la longitud de la página. Si es muy larga, puede ser mejor recortarla.
 
-Alternativamente, puedes usar una herramienta como [FireShot](https://getfireshot.com/) para tomar la captura de pantalla. FireShot tiene una opción gratuita, por lo que no necesitas comprarla.
-
-Luego, recorta/optimiza/edita tu imagen como quieras, agrégala a tu proyecto y actualiza la ruta del archivo en la imagen de arriba.
-
-**Nota: Elimina esta nota y los párrafos anteriores cuando agregues tu captura de pantalla. Si prefiere no agregar una captura de pantalla, no dude en eliminar esta sección completa.**
 
 ### Enlaces
 
-- URL de la solución: [Agregar la URL de la solución aquí](https://your-solution-url.com)
-- URL del sitio en vivo: [Agregar la URL del sitio en vivo aquí](https://your-live-site-url.com)
+- URL de la solución: [Github](https://github.com/AlbertGit8/ResultsSummaryComponent)
+- URL del sitio en vivo: [Natlify](https://resultsummary-albertosantos.netlify.app/)
 
 ## Mi proceso
-Lo primero es crear un package.json, para ello mediante npm init lo creamos, instalamos sass como depencia de desarrollo con npm i --save-dev sass
+Lo primero es crear un package.json, para ello mediante npm init lo creamos, instalamos sass como depencia de desarrollo con npm i --save-dev sass, para compilar sass, en el package.json en la seccion de scripts creamos uno para sass con la direccion donde queremos que sass compile los archivos, carpeta que llamaremos build, compilamos los archivos con npm run sass. 
+Para no tener que estar ejecutando el comando constantemente cada vez que queramos reflejar cambios habilitamos el modo watch a sass. Además instalamos gulp para automatizar tareas. Hay que configurar un gulpfile.js, toda la info está reflejada en el propio gulpfile.js. Aunque es un proyecto pequeño, he añadido sass para familiarizarme con la tecnología y optimizar la estructura de proyectos futuros.
+
+Lo primero es estructurar el html, cosa que al principio no hice correctamente porque al hacer el diseño tuve que modificar algunas cosas.
+
+Una vez estructurado pasamos al diseño, hecho en SASS como bien se ha mencionado anteriormente, esto me permite estructurar mucho mejor cada parte del proyecto a nivel de diseño.
+
+Lo último que hice fue añadir unos mixins para hacer el proyecto responsive entre un modelo mobile y desktop.
 
 ### Creado con
 
 - Marcado HTML5 semántico
 - Propiedades personalizadas de CSS
 - Flexbox
-- Cuadrícula CSS
 - Flujo de trabajo para dispositivos móviles
-- [React](https://reactjs.org/) - Biblioteca JS
-- [Next.js](https://nextjs.org/) - Marco de trabajo de React
-- [Componentes con estilo](https://styled-components.com/) - Para estilos
+- [SASS](https://sass-lang.com/) - SASS extensión de CSS
 
-**Nota: Estos son solo ejemplos. Elimine esta nota y reemplace la lista anterior con sus propias opciones**
 
 ### Lo que aprendí
 
-Use esta sección para resumir algunos de los aprendizajes más importantes mientras trabajaba en este proyecto. Escribirlos y proporcionar ejemplos de código de las áreas que desea destacar es una excelente manera de reforzar su propio conocimiento.
+He aprendido como configurar un archivo de gulp, he recordado conceptos de sass, he aprendido lo que es hsl y hsla, aqui una breve explicaion:
+#### hsl
+- Hue (Matiz)
 
-Para ver cómo puede agregar fragmentos de código, consulte a continuación:
+	- El primer valor en hsl representa el matiz, es decir, el color básico. Va de 0 a 360 y es un ángulo en la rueda de colores:
+		- 0°: Rojo
+		- 120°: Verde
+		- 240°: Azul
+        Entre estos valores, hay colores intermedios (como naranja, amarillo, púrpura, etc.).
 
-```html
-<h1>Algunos códigos HTML del que estoy orgulloso</h1>
-```
+- Saturation (Saturación)
+
+	- El segundo valor representa la saturación, que determina la intensidad o pureza del color. Va de 0% a 100%:
+		- 0%: Sin color, es decir, un tono gris.
+		- 100%: El color más intenso y puro.
+
+- Lightness (Luminosidad)
+
+	- El tercer valor es la luminosidad, que controla cuán claro u oscuro es el color.
+	- También va de 0% a 100%:
+		- 0%: Totalmente negro.
+        - 50%: El color normal.
+        - 100%: Totalmente blanco.
+
 ```css
-.proud-of-this-css {
-color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-console.log('🎉')
-}
+color: hsl(256, 72%, 46%); /* Color púrpura, con saturación media-alta y luminosidad media */
 ```
 
-Si desea más ayuda con la escritura en Markdown, le recomendamos que consulte [La guía de Markdown](https://www.markdownguide.org/) para obtener más información.
+#### hsla
+hsla es una extensión de hsl, que añade un cuarto valor: Alpha (opacidad). Este cuarto valor permite controlar la transparencia del color.
 
-**Nota: elimine esta nota y el contenido de esta sección y reemplácelos con sus propios aprendizajes.**
+- Alpha (Opacidad)
 
-### Desarrollo continuo
+    - El cuarto valor en hsla es la opacidad, que controla cuán transparente es el color.
+    - Va de 0 a 1:
+        - 0: Totalmente transparente.
+        - 1: Totalmente opaco.
 
-Use esta sección para delinear las áreas en las que desea seguir enfocándose en proyectos futuros. Estos pueden ser conceptos con los que aún no te sientes del todo cómodo o técnicas que te resultaron útiles y que deseas refinar y perfeccionar.
+```css
+color: hsla(256, 72%, 46%, 1); /* Púrpura opaco (1 significa que no es transparente) */
+color: hsla(256, 72%, 46%, 0.5); /* Púrpura semi-transparente (50% de opacidad) */
 
-**Nota: Elimina esta nota y el contenido de esta sección y reemplázalos con tus propios planes para un desarrollo continuo.**
+```
 
-### Recursos útiles
 
-- [Recurso de ejemplo 1](https://www.example.com): esto me ayudó por XYZ. Me gustó mucho este patrón y lo usaré en el futuro.
-- [Recurso de ejemplo 2](https://www.example.com): este es un artículo increíble que me ayudó a comprender finalmente XYZ. Se lo recomendaría a cualquiera que todavía esté aprendiendo este concepto.
-
-**Nota: elimina esta nota y reemplaza la lista anterior con recursos que te ayudaron durante el desafío. Estos pueden resultar útiles para cualquier persona que vea tu solución o para ti mismo cuando mires este proyecto en el futuro.**
 
 ## Autor
+- Instagram: [@albertosdz](https://www.instagram.com/albertosdz)
 
-- Sitio web: [Agrega tu nombre aquí](https://www.your-site.com)
-- Mentor de frontend: [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter: [@yourusername](https://www.twitter.com/yourusername)
-
-**Nota: elimina esta nota y agrega, elimina o edita las líneas anteriores según los enlaces que quieras compartir.**
-
-## Agradecimientos
-
-Aquí puedes agradecer a cualquiera que te haya ayudado en este proyecto. Quizás trabajaste en equipo o te inspiraste en la solución de otra persona. Este es el lugar perfecto para darles algo de crédito.
-
-**Nota: elimina esta nota y edita el contenido de esta sección según sea necesario. Si completaste este desafío por tu cuenta, no dudes en eliminar esta sección por completo.**

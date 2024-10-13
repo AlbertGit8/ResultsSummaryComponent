@@ -1,0 +1,164 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.contenido {
+    height: auto;
+    width: auto;
+    box-shadow: 1rem 0rem 1.5rem -0.5rem v.$azulPalido;
+
+    @include m.desktop {
+        display: flex;
+        border-radius: 1.5rem;
+    }
+
+    margin-bottom: 2rem;
+
+    .card {
+        border-radius: 0 0 1.5rem 1.5rem;
+
+        @include m.desktop {
+            border-radius: 1.5rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to top, v.$azulReal 0%, v.$azulPizarra 100%);
+        color: v.$lavandaClaro;
+
+        h1,
+        h2,
+        p {
+            margin: 2rem;
+        }
+
+        .circulo {
+            margin: 0;
+            height: 5rem;
+            width: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            background-image: linear-gradient(to top, v.$azulPersa 0%, v.$azulVioleta 100%);
+            border-radius: 50%;
+
+            span {
+                color: v.$blanco;
+                font-size: 4rem;
+                font-weight: 800;
+            }
+        }
+
+        h1 {
+            color: v.$blanco;
+        }
+
+        p {
+            margin: 0 2rem 2rem 2rem;
+            text-align: center;
+            width: 15rem;
+        }
+    }
+
+    .resumen {
+        h2 {
+            margin: 2rem;
+        }
+
+        .estadisticas {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            margin: 2rem;
+
+            @include m.desktop {
+                width: 15rem;
+                margin: 2rem;
+            }
+
+            gap: 1rem;
+
+            .estadistica {
+
+                .centrado {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.7rem;
+                }
+
+                .puntuacion {
+                    p {
+                        color: v.$negro;
+                    }
+
+                    span {
+                        color: grey;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                img {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 0.5rem;
+                padding: 0.8rem;
+
+            }
+
+            .reaction {
+                color: v.$rojoClaro;
+                background: hsl(0, 100%, 98%);
+            }
+
+            .memory {
+                color: v.$amarilloAnaranjado;
+                background: hsl(39, 100%, 96%);
+            }
+
+            .verbal {
+                color: v.$verdeAzulado;
+                background: hsl(166, 100%, 96%);
+            }
+
+            .visual {
+                color: v.$azulCobalto;
+                background: hsl(234, 85%, 98%);
+            }
+        }
+
+        .boton {
+            @include m.desktop {
+                margin: 0 0 0 2rem;
+                width: 15rem;
+            }
+            margin: 0 2rem 0 2rem;
+            text-align: center;
+            width: auto;
+            padding: 0.7rem 0 0.7rem 0;
+            border-radius: 1.5rem;
+            display: block;
+            background: v.$azulGrisaceo;
+            color: v.$blanco;
+            font-size: medium;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                background: v.$azulReal;
+            }
+
+        }
+    }
+
+}

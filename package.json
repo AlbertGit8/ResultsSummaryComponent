@@ -2,9 +2,11 @@
   "name": "resultssummary",
   "version": "1.0.0",
   "description": "Creando un componente de resumen de resultados responsive con SASS",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,9 @@
   },
   "homepage": "https://github.com/AlbertGit8/ResultsSummaryComponent#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "normalize.css": "^8.0.1",
     "sass": "^1.79.5"
   }
 }
