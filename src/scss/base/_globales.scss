@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 *:before,
 *:after {
@@ -12,33 +13,43 @@ body {
     &.fijar-body {
         overflow: hidden;
     }
+
     &.body-scroll {
         padding-top: 8.6rem;
-    } 
+    }
 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column; 
+    /* Limita la altura al 100% de la ventana de visualización */
+    overflow-y: auto;
+    /* Permite que el contenido sea desplazable si es más alto que el contenedor */
+    flex-direction: column;
 }
 
 p {
-    font-size: medium; 
+    font-size: medium;
     font-weight: 500;
 }
+
 a {
     text-decoration: none;
 }
-h1, h2, h3 {
-    margin: 0; 
+
+h1,
+h2,
+h3 {
+    margin: 0;
 }
+
 h1 {
-    font-size: 2.2rem; 
-    font-weight: 700; 
+    font-size: 2.2rem;
+    font-weight: 700;
 }
+
 h2 {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
@@ -48,12 +59,15 @@ img {
     width: 100%;
     height: auto;
     display: block;
-} 
+}
+
 
 .attribution {
     font-size: 11px;
     text-align: center;
     margin-bottom: 1rem;
+    
+
 }
 
 .attribution a {
